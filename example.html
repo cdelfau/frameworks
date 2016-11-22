@@ -13,9 +13,9 @@
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
   </head>
   <body>
 
@@ -26,54 +26,172 @@
 
 
     <div class="container" id="typography">
-    <h1><strong>Typography</strong></h1>
-    <h1>H1 style! Hello, world! <small>Small H1 style! hi</small></h1>
-    <h2>H2 style! Hello, world! <small>Small H2 style! hi</small></h2>
-    <h3>H3 style! Hello, world! <small>Small H3 style! hi</small></h3>
-    <h4>H4 style! Hello, world! <small>Small H4 style! hi</small></h4>
-    <p> . . . up to h7!</p>
-    <pre>
-    &lt;h1&gt;H1 style! Hello, world! &lt;small&gt;Small H1 style! hi&lt;/small&gt;&lt;/h1&gt;<br>
-    &lt;h2&gt;H2 style! Hello, world! &lt;small&gt;Small H2 style! hi&lt;/small&gt;&lt;/h2&gt;<br>
-    &lt;h3&gt;H3 style! Hello, world! &lt;small&gt;Small H3 style! hi&lt;/small&gt;&lt;/h3&gt;<br>
-    &lt;h4&gt;H4 style! Hello, world! &lt;small&gt;Small H4 style! hi&lt;/small&gt;&lt;/h4&gt;
-    </pre>
+      <h1><strong>Typography</strong></h1>
+      <p>One of the things bootstrap does is define css for certain HTML tags, such as heading styles:</p>
+      <h1>H1 style! Hello, world! <small>Small H1 style! hi</small></h1>
+      <h2>H2 style! Hello, world! <small>Small H2 style! hi</small></h2>
+      <h3>H3 style! Hello, world! <small>Small H3 style! hi</small></h3>
+      <h4>H4 style! Hello, world! <small>Small H4 style! hi</small></h4>
+      <p> . . . up to h7!</p>
+      <p>These are normal heading styles. Use <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>,... etc. To get the subheadings, use <code>&lt;small&gt;</code> within a heading style pair.</p>
 
-    <p>Stylized abbreviations... That's <abbr title="pretty">p</abbr> cool. Look at that built-in cool cursor and shadow, damn.</p>
+      <p>Another (small) example: Stylized abbreviations... That's <abbr title="pretty">p</abbr> cool. Look at that built-in cool cursor and shadow, damn.</p>
     </div>
 
     <div class="container" id="tables">
-      <h1>Tables!!!</h1>
+      <h1><strong>Tables!!!</strong></h1>
+      <p>Bootstrap defines some classes for some snazzy table styles...</p>
+      <h1><small>Striped</small></h1>
       <table class="table table-striped">
 	<thead>
-	<tr>
-	  <td>Color</td>
-	  <td>Association</td>
-	  <td>Rating</td>
-	</tr>
+	  <tr>
+	    <td>Color</td>
+	    <td>Association</td>
+	    <td>Rating</td>
+	  </tr>
 	</thead>
 	<tbody>
-	<tr>
-	  <td>Green</td>
-	  <td>Guava</td>
-	  <td>88</td>
-	</tr>
-	<tr>
-	  <td>Blue</td>
-	  <td>Blueberry</td>
-	  <td>81</td>
-	</tr>
-	<tr>
-	  <td>Red</td>
-	  <td>Cherry</td>
-	  <td>40</td>
-	</tr>
+	  <tr>
+	    <td>Green</td>
+	    <td>Guava</td>
+	    <td>88</td>
+	  </tr>
+	  <tr>
+	    <td>Blue</td>
+	    <td>Blueberry</td>
+	    <td>81</td>
+	  </tr>
+	  <tr>
+	    <td>Red</td>
+	    <td>Cherry</td>
+	    <td>40</td>
+	  </tr>
 	</tbody>	  
       </table>
+
+      <pre>
+	&lt;table class="table table-striped"&gt;
+	&lt;thead&gt;
+	...
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+	
+	...
+
+	&lt;/tbody&gt;	  
+  	&lt;/table&gt;
+      </pre>    
+      <h1><small>Hover</small></h1>
+      <table class="table table-hover">
+	<thead>
+	  <tr>
+	    <td>Color</td>
+	    <td>Association</td>
+	    <td>Rating</td>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+	    <td>Green</td>
+	    <td>Guava</td>
+	    <td>88</td>
+	  </tr>
+	  <tr>
+	    <td>Blue</td>
+	    <td>Blueberry</td>
+	    <td>81</td>
+	  </tr>
+	  <tr>
+	    <td>Red</td>
+	    <td>Cherry</td>
+	    <td>40</td>
+	  </tr>
+	</tbody>	  
+      </table>
+      <pre>
+	&lt;table class="table table-striped"&gt;
+      </pre>
     </div>
+    <div class="container">
+      <h1>Image classes</h1>
+      <p>... and snazzy image styles...</p>
+      <div class="col-md-4">
+	<h1><small>Rounded corners</small></h1>
+	<img src="p3.jpg" alt="dog" width="200px" height="200px" class="img-rounded"><br><br>
+	<code>&lt;img src=... alt=... class="img-rounded"&gt;</code>
+      </div>
+      <div class="col-md-4">
+	<h1><small>Circle</small></h1>
+	<img src="p3.jpg" alt="dog" width="200px" height="200px" class="img-circle"><br><br>
+	<code>&lt;img src=... alt=... class="img-circle"&gt;</code>
+      </div>
+      <div class="col-md-4">
+	<h1><small>Rounded corners</small></h1>
+	<img src="p3.jpg" alt="dog" width="200px" height="200px" class="img-thumbnail"><br><br>
+	<code>&lt;img src=... alt=... class="img-thumbnail"&gt;</code>
+      </div>
+
+      <p>Above is also an example of bootstrap columns. Use the div classes <code>col-mid-#</code> where # is some number. In the above code, we used three <code>col-mid-4</code>'s.
+    </div>
+
+    <div class="container">
+      <h1>Buttons!</h1>
+      <p>... and buttons?!?!?!?...</p>
+      <button type="button" class="btn btn-default btn-lg">Default color; Large size</button><br><br>
+      <button type="button" class="btn btn-primary">Primary color: Regular size</button><br><br>
+      <button type="button" class="btn btn-success btn-sm">Success color; Small size</button><br><br>
+      <button type="button" class="btn btn-info btn-xs">Info color; X-small size</button><br><br>
+      <button type="button" class="btn btn-warning btn-block">Warning color; block size</button><br>
+      <button type="button" class="btn btn-danger">Danger color; not active state</button> vs.
+      <button type="button" class="btn btn-danger active">Danger color; active state</button><br><br>
+      <button type="button" class="btn btn-primary" disabled="disabled">Primary color; disabled state</button><br><br>
+      <p>You can mix and match different colors, sizes and states for your buttons by putting their codes isnide the <code>class</code> attribute of the <code>button</code> tag. For example:<br>
+	<code>&lt;button class="btn btn-danger btn-xs active"&gt;</code>
+      </p>
+      
+      <table class="table table-striped">
+	<thead>
+	  <tr>
+	    <td>Color</td>
+	    <td>Size</td>
+	    <td>State</td>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+	    <td><code>btn-default</code>  Default</td>
+	    <td><code>btn-lg</code>  Large</td>
+	    <td><code>active</code>  Active</td>
+	  </tr>
+	  <tr>
+	    <td><code>btn-primary</code>  Primary</td>
+	    <td><code>btn-sm</code>  Small</td>
+	    <td><code>disabled="disabled"</code>  Disabled **</td>
+	  </tr>
+	  <tr>
+	    <td><code>btn-success</code>  Success</td>
+	    <td><code>btn-xs</code>  X-small</td>
+	  </tr>
+	  <tr>
+	    <td><code>btn-info</code>  Info</td>
+	    <td><code>btn-block</code>  Block *</td>
+	  </tr>
+	  <tr>
+	    <td><code>btn-warning</code>  Warning</td>
+	  </tr>
+	  <tr>
+	    <td><code>btn-danger</code>  Danger</td>
+	  </tr>
+	</tbody>
+      </table>
+      <small>* block size will make the button expand to the width of its container<br>
+	** EXCEPTION: <code>disabled</code> is a separate attribute of the <code>button</code> tag -- should not go inside class attribute!</small>
+    </div>
+
 
     <div class="container" id="forms">
       <h1>Forms are fun!</h1>
+      <p>... AND forms!!!!</p>
       <form>
 	<h2>Classic Form</h2>
 	<div class="form-group">
@@ -108,6 +226,11 @@
 	</div>
 	<button type="submit" class="btn btn-default">Send invitation</button>
       </form>
+      <pre>
+	&lt;form class="form-inline"&gt;
+	  ...
+	  ...
+	&lt;/form&gt;</pre>
 
       <br>
       <form>
@@ -117,73 +240,118 @@
 	  <input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2">
 	  <span id="helpBlock2" class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
 	</div>
+	<pre>
+	&lt;div class="form-group has-success"&gt;
+	  &lt;label class="control-label" for="inputSuccess1"&gt;Input with success&lt;/label&gt;
+	  &lt;input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2"&gt;
+	  &lt;span id="helpBlock2" class="help-block"&gt;A block of help text that breaks onto a new line and may extend beyond one line.&lt;/span&gt;
+	&lt;/div&gt;</pre>
 	<div class="form-group has-warning">
 	  <label class="control-label" for="inputWarning1">Input with warning</label>
 	  <input type="text" class="form-control" id="inputWarning1">
 	</div>
+	<pre>
+	&lt;div class="form-group has-warning"&gt;
+	  &lt;label class="control-label" for="inputWarning1"&gt;Input with warning&lt;/label&gt;
+	  &lt;input type="text" class="form-control" id="inputWarning1"&gt;
+	&lt;/div&gt;</pre>
 	<div class="form-group has-error">
 	  <label class="control-label" for="inputError1">Input with error</label>
 	  <input type="text" class="form-control" id="inputError1">
 	</div>
+	<pre>
+	&lt;div class="form-group has-error"&gt;
+	  &lt;label class="control-label" for="inputError1"&gt;Input with error&lt;/label&gt;
+	  &lt;input type="text" class="form-control" id="inputError1"&gt;
+	&lt;/div&gt;</pre>
       </form>
       
 
-    <br><br>
-    <div class="container" id="controls">
-      <h2>Form Controls</h2>
-      <h3>Checkboxes</h3>
-      <div class="checkbox">
-	<label>
-	  <input type="checkbox" value="">
-	  Option one is this and that&mdash;be sure to include why it's great
-	</label>
-      </div>
-      <div class="checkbox">
-	<label>
-	  <input type="checkbox" value="">
-	  Option one is this and that&mdash;be sure to include why it's great
-	</label>
-      </div>
-      <div class="checkbox disabled">
-	<label>
-	  <input type="checkbox" value="" disabled>
-	  Option two is disabled
-	</label>
-      </div>
-      
-      <br>
-      <h3>Radios</h3>
-      <div class="radio">
-	<label>
-	  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-	  Option one is this and that&mdash;be sure to include why it's great
-	</label>
-      </div>
-      <div class="radio">
-	<label>
-	  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-	  Option two can be something else and selecting it will deselect option one
-	</label>
-      </div>
-      <div class="radio disabled">
-	<label>
-	  <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-	  Option three is disabled
-	</label>
-      </div>
+      <br><br>
+      <div class="container" id="controls">
+	<h2>Form Controls</h2>
+	<h3>Checkboxes</h3>
+	<div class="checkbox">
+	  <label>
+	    <input type="checkbox" value="">
+	    Option one is this and that&mdash;be sure to include why it's great
+	  </label>
+	</div>
+	<div class="checkbox">
+	  <label>
+	    <input type="checkbox" value="">
+	    Option one is this and that&mdash;be sure to include why it's great
+	  </label>
+	</div>
+	<div class="checkbox disabled">
+	  <label>
+	    <input type="checkbox" value="" disabled>
+	    Option two is disabled
+	  </label>
+	</div>
 
-      <br>
-      <h3>Selects</h3>
-      <select class="form-control">
-	<option>1</option>
-	<option>2</option>
-	<option>3</option>
-	<option>4</option>
-	<option>5</option>
-      </select>
+	<pre>
+	  CHECKBOX:
+	  &lt;div class="checkbox"&gt;
+	    ...
+	  &lt;/div&gt;
+
+	  DISABLED CHECKBOX:
+	  &lt;div class="checkbox disabled"&gt;
+	    ...
+	  &lt;/div&gt;</pre>
+	
+	<br>
+	<h3>Radios</h3>
+	<div class="radio">
+	  <label>
+	    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+	    Option one is this and that&mdash;be sure to include why it's great
+	  </label>
+	</div>
+	<div class="radio">
+	  <label>
+	    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+	    Option two can be something else and selecting it will deselect option one
+	  </label>
+	</div>
+	<div class="radio disabled">
+	  <label>
+	    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+	    Option three is disabled
+	  </label>
+	</div>
+
+	<pre>
+	  RADIO:
+	  &lt;div class="radio"&gt;
+	    ...
+	  &lt;/div&gt;
+
+	  DISABLED RADIO:
+	  &lt;div class="radio disabled"&gt;
+	    ...
+	  &lt;/div&gt;</pre>
+
+	<br>
+	<h3>Selects</h3>
+	<select class="form-control">
+	  <option>1</option>
+	  <option>2</option>
+	  <option>3</option>
+	  <option>4</option>
+	  <option>5</option>
+	</select>
+	<pre>
+	  &lt;select class="form-control"&gt;
+	    &lt;option&gt;...&lt;option&gt;
+	    &lt;option&gt;...&lt;option&gt;
+	    &lt;option&gt;...&lt;option&gt;
+	    ...
+	  &lt;/select&gt;</pre>
+	
+      </div>
       
-    </div>
-    
   </body>
   <br><br>
 </html>
