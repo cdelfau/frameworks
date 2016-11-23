@@ -26,12 +26,12 @@
 
 
     <div class="container" id="typography">
-      <h1><strong>Typography</strong></h1>
-      <p>One of the things bootstrap does is define css for certain HTML tags, such as heading styles:</p>
-      <h1>H1 style! Hello, world! <small>Small H1 style! hi</small></h1>
-      <h2>H2 style! Hello, world! <small>Small H2 style! hi</small></h2>
-      <h3>H3 style! Hello, world! <small>Small H3 style! hi</small></h3>
-      <h4>H4 style! Hello, world! <small>Small H4 style! hi</small></h4>
+      <h1><strong>Typical Typography</strong></h1>
+      <p>One of the things bootstrap does is define CSS for certain HTML tags, such as heading styles:</p>
+      <h1>H1 style! Hello, world! <small>Small H1 style!</small></h1>
+      <h2>H2 style! Hello, world! <small>Small H2 style!</small></h2>
+      <h3>H3 style! Hello, world! <small>Small H3 style!</small></h3>
+      <h4>H4 style! Hello, world! <small>Small H4 style!</small></h4>
       <p> . . . up to h7!</p>
       <p>These are normal heading styles. Use <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>,... etc. To get the subheadings, use <code>&lt;small&gt;</code> within a heading style pair.</p>
 
@@ -39,7 +39,7 @@
     </div>
 
     <div class="container" id="tables">
-      <h1><strong>Tables!!!</strong></h1>
+      <h1><strong>Tact Tables</strong></h1>
       <p>Bootstrap defines some classes for some snazzy table styles...</p>
       <h1><small>Striped</small></h1>
       <table class="table table-striped">
@@ -112,8 +112,9 @@
 	&lt;table class="table table-striped"&gt;
       </pre>
     </div>
+    
     <div class="container">
-      <h1>Image classes</h1>
+      <h1>Imbedded Image</h1>
       <p>... and snazzy image styles...</p>
       <div class="col-md-4">
 	<h1><small>Rounded corners</small></h1>
@@ -190,10 +191,10 @@
 
 
     <div class="container" id="forms">
-      <h1>Forms are fun!</h1>
+      <h1>Focused Forms</h1>
       <p>... AND forms!!!!</p>
       <form>
-	<h2>Classic Form</h2>
+	<h1><small>Classic Form</small></h1>
 	<div class="form-group">
 	  <label for="exampleInputEmail1">Email address</label>
 	  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
@@ -213,16 +214,15 @@
 	</div>
       </form>
 
-      <br>
       <form class="form-inline">
-	<h2>Inline form</h2>
+	<h1><small>Inline form</small></h1>
 	<div class="form-group">
 	  <label for="exampleInputName2">Name</label>
-	  <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+	  <input type="text" class="form-control" id="exampleInputName2" placeholder="Name">
 	</div>
 	<div class="form-group">
 	  <label for="exampleInputEmail2">Email</label>
-	  <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+	  <input type="email" class="form-control" id="exampleInputEmail2" placeholder="abc@example.com">
 	</div>
 	<button type="submit" class="btn btn-default">Send invitation</button>
       </form>
@@ -232,9 +232,8 @@
 	  ...
 	&lt;/form&gt;</pre>
 
-      <br>
       <form>
-	<h2>Validation Form</h2>
+	<h1><small>Validation Form</small></h1>
 	<div class="form-group has-success">
 	  <label class="control-label" for="inputSuccess1">Input with success</label>
 	  <input type="text" class="form-control" id="inputSuccess1" aria-describedby="helpBlock2">
@@ -274,19 +273,19 @@
 	<div class="checkbox">
 	  <label>
 	    <input type="checkbox" value="">
-	    Option one is this and that&mdash;be sure to include why it's great
+	    This is Option 1
 	  </label>
 	</div>
 	<div class="checkbox">
 	  <label>
 	    <input type="checkbox" value="">
-	    Option one is this and that&mdash;be sure to include why it's great
+	    This is Option 2, which can be selected at the same time as Option 1
 	  </label>
 	</div>
 	<div class="checkbox disabled">
 	  <label>
 	    <input type="checkbox" value="" disabled>
-	    Option two is disabled
+	    Option 3 is disabled
 	  </label>
 	</div>
 
@@ -306,19 +305,19 @@
 	<div class="radio">
 	  <label>
 	    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-	    Option one is this and that&mdash;be sure to include why it's great
+	    This is Option 1
 	  </label>
 	</div>
 	<div class="radio">
 	  <label>
 	    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-	    Option two can be something else and selecting it will deselect option one
+	    This is Option 2, which will deselect the other option chosen if it is selected
 	  </label>
 	</div>
 	<div class="radio disabled">
 	  <label>
 	    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-	    Option three is disabled
+	    Option 3 is disabled
 	  </label>
 	</div>
 
@@ -336,11 +335,11 @@
 	<br>
 	<h3>Selects</h3>
 	<select class="form-control">
-	  <option>1</option>
-	  <option>2</option>
-	  <option>3</option>
-	  <option>4</option>
-	  <option>5</option>
+	  <option>Option 1</option>
+	  <option>Option 2</option>
+	  <option>Option 3</option>
+	  <option>Option 4</option>
+	  <option>Option 5</option>
 	</select>
 	<pre>
 	  &lt;select class="form-control"&gt;
@@ -349,7 +348,6 @@
 	    &lt;option&gt;...&lt;option&gt;
 	    ...
 	  &lt;/select&gt;</pre>
-	
       </div>
       
   </body>
